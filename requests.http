@@ -1,0 +1,25 @@
+###
+POST http://localhost:9000/api/todolists HTTP/1.1
+Content-Type: application/json
+
+{
+    "title": "hablar con diego"
+}
+
+###
+GET http://localhost:9000/api/todolists HTTP/1.1
+
+
+###
+GET http://localhost:9000/api/todolists/624cb5f92b04f6fdcfbb3711 HTTP/1.1
+
+###
+PUT  http://localhost:9000/api/todolists/624cbe663bae0d9b9f83b92e HTTP/1.1
+Content-Type: application/json
+
+{
+    "title": "Hacer la cena"
+}
+
+###
+DELETE http://localhost:9000/api/todolists/624cbe683bae0d9b9f83b930 HTTP/1.1
